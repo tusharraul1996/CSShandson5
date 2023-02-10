@@ -1,0 +1,73 @@
+
+body {
+    background-color: yellow;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+.main{
+margin-left: 530px;
+justify-content: center;
+}
+
+.div {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+
+
+}
+
+.div1 {
+    transition: width 2s;
+    /* display: inline-block; */
+}
+
+.div1:hover {
+    width: 300px;
+}
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7{
+    transition: all 2s;
+}
+
+.div2:hover {
+    height: 300px;
+    width: 300px;
+}
+
+.div3:hover {
+    width: 300px;
+    transition-timing-function: linear;
+}
+
+.div4:hover {
+    width: 300px;
+    transition-timing-function: ease;
+}
+
+.div5:hover {
+    width: 300px;
+    transition-timing-function: ease-in;
+}
+
+.div6:hover {
+    width: 300px;
+    transition-timing-function: ease-in-out;
+}
+
+.div7:hover {
+    width: 300px;
+    transition-timing-function: ease-out;
+}

@@ -1,0 +1,109 @@
+body{
+    background-color: yellow;
+}
+h1{
+    text-align: center;
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+.div1{
+    background-color: cadetblue;
+    width: 100px;
+    height: 100px;
+    margin: 40px;
+    display: inline-block;
+}
+.skew{
+    animation: aa 2s linear infinite alternate;
+}
+
+@keyframes aa{
+    from{
+        transform:skewX(-25deg);
+    }
+    to{
+        transform: skewX(25deg);
+    }
+}
+.skew2{
+    animation: bb 2s linear infinite alternate;
+    background-color: darkgray;
+}
+@keyframes bb {
+    from{
+        transform: skewY(25deg);
+    }
+    to{
+        transform: skewY(-25deg);
+    }
+    
+}
+
+.skew3{
+    animation: rotation 2s ease-in-out infinite;
+}
+@keyframes rotation {
+    100%{
+        transform: rotate(360deg);
+    }   
+    
+}
+
+.skew4{
+    animation: height 5s ease-in-out infinite;
+    transform: scaleY(50px);
+    border: 2px solid rgb(11, 81, 102);
+}
+
+@keyframes height{
+    0% {
+        transform: scaleY(1);
+    }
+    25% {
+        transform: scaleY(1);
+    }
+    75% {
+        transform: scaleY(0.5);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.skew5{
+    animation: width 5s ease-in-out infinite;
+    transform: scaleX(50px);
+    background-color: brown;
+    border: 2px solid rgb(206, 12, 12);
+}
+
+@keyframes width{
+    0% {
+        transform: scaleX(1);
+    }
+    25% {
+        transform: scaleX(1);
+    }
+    75% {
+        transform: scaleX(0.5);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.skew6{
+    animation: halfcircle 2s ease-in-out infinite alternate;
+    transform: scaleY(50px);
+    background-color: rgb(18, 245, 18);
+    border: 2px solid rgb(10, 138, 10);
+}
+
+@keyframes halfcircle{
+    100% {
+        transform: rotate(-90deg);
+    }
+    
+}
